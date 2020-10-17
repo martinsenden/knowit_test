@@ -1,0 +1,110 @@
+.employeeDisplay{
+    background-color: #537791;
+    width: 50%;
+    left: 30%;
+    top: 0%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 900px;
+    position: absolute;
+}
+
+.partyList{
+    width: 80%;
+    padding-left: 0;
+    display: block;
+    position: relative;
+    left: 12%;
+}
+
+.partyList li{
+    float: left;
+    list-style: none;
+    left: 24.25%;
+    position: relative;
+    margin-top:10px;
+}
+@keyframes loadingAnimation {
+    0%, 100% {
+        width: 0px;
+    }
+    25%{
+        width: 50px;
+    }
+    50%{
+        width: 100px;
+    }
+    75%{
+        width: 150px;
+    }
+}
+.loadingAnimation{
+    width: 0px;
+    height: 20px;
+    margin-left: 45%;
+    text-align: center;
+    margin-top: 20%;
+    display: inline-block;
+    background-color: #537791;
+    animation: loadingAnimation 2s linear infinite;
+}
+
+@media screen and (max-width: 830px){
+    .partyList li{
+        float: none;
+        vertical-align: 0%;
+        left: 0;
+        margin-top: 0;
+    }
+
+    .partyList{
+        margin-top: 1em;
+        position: absolute;
+        padding: 0;
+        height: 100%;
+        left: 0%;
+        width: 81%;
+    }
+
+    .employeeDisplay{
+        background-color: #537791;
+        width: 70%;
+        top: 0%;
+        right: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+        height: 100%;
+        margin-right: 0;
+    }
+  .loadingAnimation{
+        margin-left: 30%;
+        position: relative;
+        margin-top: 100%;
+
+    }  
+}
+
+@media screen and (min-width: 830px) and (max-width: 1024px){
+    .employeeDisplay{
+        position:absolute;
+        width: auto;
+        top: 0%;
+        height: 700px;
+    }
+    .partyList{
+        position: relative;
+        display: inline-grid;
+        left: 0;
+    }
+    .partyList li{
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    
+}
+
+
+
+

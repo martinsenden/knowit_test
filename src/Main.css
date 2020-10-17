@@ -1,0 +1,21 @@
+div{
+    margin-top: 2em;
+}
+
+.header{
+    background-color: #112d4e;
+    width: 100%;
+    z-index: 9999999;
+    height: 50px;
+    margin-top: -32px;
+    position: absolute;
+    transition-duration: 0.5s;
+    
+}
+body{
+   color: #eeeeee 
+}
+
+.header p{
+    text-align: center
+}
